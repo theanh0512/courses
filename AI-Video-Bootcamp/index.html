@@ -186,11 +186,18 @@ body {
 
 .module-banner {
     height: 160px;
-    background: #333;
+    background: #1f2937;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.module-banner-image {
+    width: 70%;
+    max-width: 220px;
+    height: auto;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.35));
 }
 
 .module-banner-emoji {
@@ -778,7 +785,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <div class="module-banner" style="background: ${bgColor}">
                     <div class="module-banner-title">Chapter ${mIndex + 1}</div>
-                    <div class="module-banner-emoji">${emoji}</div>
+                    <img class="module-banner-image" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMTQwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE0MCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyZWVuIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzdiYzU2YSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0YTljM2UiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9InJlZCIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNlODVhNGYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYjUzMDI4Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJibHVlIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzRhNmVlOCIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyOTQ1YjUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDwhLS0gQmx1ZSBib29rIChib3R0b20pIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLDg2KSByb3RhdGUoLTYpIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNjAiIGhlaWdodD0iMjIiIHJ4PSIyIiBmaWxsPSJ1cmwoI2JsdWUpIi8+CiAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjQiIGZpbGw9IiMxYTJmOGEiIG9wYWNpdHk9IjAuNCIvPgogICAgPHJlY3QgeD0iNiIgeT0iOCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMyIvPgogIDwvZz4KICA8IS0tIFJlZCBib29rIChtaWRkbGUpIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE1LDYyKSByb3RhdGUoMykiPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE3MCIgaGVpZ2h0PSIyMiIgcng9IjIiIGZpbGw9InVybCgjcmVkKSIvPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE3MCIgaGVpZ2h0PSI0IiBmaWxsPSIjN2ExYTE0IiBvcGFjaXR5PSIwLjQiLz4KICAgIDxyZWN0IHg9IjYiIHk9IjgiIHdpZHRoPSI1MCIgaGVpZ2h0PSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjMiLz4KICA8L2c+CiAgPCEtLSBHcmVlbiBib29rICh0b3ApIC0tPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1LDI4KSByb3RhdGUoLTIpIj4KICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxNTAiIGhlaWdodD0iMjYiIHJ4PSIyIiBmaWxsPSJ1cmwoI2dyZWVuKSIvPgogICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjE1MCIgaGVpZ2h0PSI0IiBmaWxsPSIjMmQ2ZTI1IiBvcGFjaXR5PSIwLjQiLz4KICAgIDxyZWN0IHg9IjYiIHk9IjkiIHdpZHRoPSI0NCIgaGVpZ2h0PSIyIiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjM1Ii8+CiAgICA8cmVjdCB4PSI2IiB5PSIxNCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjIiIGZpbGw9IiNmZmYiIG9wYWNpdHk9IjAuMjUiLz4KICA8L2c+Cjwvc3ZnPgo=" alt="">
                 </div>
                 <div class="module-info">
                     <h3>${mod.title}</h3>

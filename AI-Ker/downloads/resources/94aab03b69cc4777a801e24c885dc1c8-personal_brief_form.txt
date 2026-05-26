@@ -1,0 +1,60 @@
+YOUR PERSONAL BRIEF — FORM FOR CLAUDE
+
+Purpose: Điền form này để Claude hiểu rõ về bạn, ưu tiên của bạn, và cách bạn muốn được hỗ trợ.
+
+---
+
+1. WHO I AM & WHAT I DO
+
+Your name/handle:
+
+What do you do?
+
+Who is your audience/customer/community?
+
+What do you do for them?
+
+---
+
+2. HOW I'D LIKE YOU TO TALK TO ME
+
+Tone preference:
+
+Language:
+
+How much detail?
+
+When I ask your opinion:
+
+Things you should NEVER do:
+
+---
+
+3. WHAT MATTERS MOST TO ME RIGHT NOW
+
+Top 4 priorities (next 3-6 months):
+1.
+2.
+3.
+4.
+
+---
+
+4. MY DAYS & WHAT'S NON-NEGOTIABLE
+
+Typical daily structure:
+- Morning:
+- Afternoon:
+- Evening:
+
+Non-negotiables:
+
+---
+
+5. THINGS I REALLY DON'T WANT
+
+Never do:
+
+---
+
+When you ask Claude for help, paste this filled form + your question. Claude will give feedback specific to YOUR situation, not generic.
